@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            list-style: none;
+            float: left; padding: 15px;
+        }
+        li:first-child{
+            border-radius: 20px 0 0 20px;
+        }
+        li:last-child{
+            border-radius: 0 20px 20px 0;
+        }
+        /*홀수 표기 : nth-child(2n)*/
+        li:nth-child(even){
+            background-color:firebrick;
+        }
+        /*홀수 표기 : nth-child(2n+1)*/
+        li:nth-child(odd){
+            background-color:teal;
+        }
+          /*3의 배수 표기 : nth-child(3n)*/
+        li:nth-child(odd){
+            background-color:rgb(0, 128, 21);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>첫째칸</li>
+        <li>둘째칸</li>
+        <li>셋째칸</li>
+        <li>넷째칸</li>
+        <li>다섯째칸</li>
+        <li>여섯째칸</li>
+        <li>막내칸</li>
+    </ul>
+</body>
+</html>

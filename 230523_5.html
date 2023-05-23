@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3{
+            color:rgb(rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255), 0.5);
+        }
+        p{
+            /*16px =1rem*/ 
+            /*
+            <<상대단위>>
+            vmax = viewport-maximum의 줄임말. 화면비를 지정한 값으로 크기 지정 할 때 씁니다.
+            vmin = viewport-minimum의 줄임말. 화면비를 지정한 값으로 크기 지정 할 때 씁니다.
+            vw = viewport-width의 줄임말/ (사용자 화면) 기준으로 나타나는 가로영역 10vw=(제 화면을 기준)10%
+            vh = viewport-high의 줄임말/ (사용자 화면) 기준으로 나타나는 세로영역
+            fr = fraction의 줄임말 1/2 그리드 레이아웃 div 덩어리에서 종종 볼 수 있음.
+               = 피그마-오토레이아웃의 기능과 유사한 점이 있음.
+            ★ rem = root em의 줄임말
+                   = 상대단위를 써서 div난, 폰트, 이미지 등을 일관성 있게 유지.
+            em = emaphasized(강조된)의 줄임말
+               = 상대단위 p=20px  폰트사이즈라면, span=1em 폰트
+            % = 웹브라우저에 띄운 페이지를 기준으로 작업이 됩는 유동비.           
+            
+            <<고정단위>>
+            ★ px = pixel. 화소의 단위. 
+            pt = 포인트,  글자 단위.
+            */
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h3>강아지의 종류</h3>
+        <img src="./KakaoTalk_20230309_105950336.jpg" width="600">
+        <p>
+            강아지의 종류에는 프렌치불독, 치와와, <em>샤페이</em>, 아메리칸 불독, 보도콜리, 시츄, 시바견, 말라뮤트
+            인간에 의해 개량된 종이 아닌 자연발생된 고유의 강아지 일수록 늑대와 가장 유사한 DNA를 가지고 있다.
+        </p>
+    </article>
+</body>
+</html>

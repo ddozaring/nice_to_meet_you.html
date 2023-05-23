@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*속성 선택자*/
+        input[type="text"]{
+            background-color: slateblue;
+        }
+        input[type="password"]{
+            background-color: plum;
+        }
+        /*.# 태그이름, 기호등식 + @*/
+        h2{
+            color: bisque;
+        }
+        /*이렇게 적으면 h2는 웹페이지 전체에서 검색됩니다.
+        article h1, h2{
+            color: rgb(158, 114, 211);
+        }
+        
+        */
+        
+        article h1, article h2{
+            color: aqua;
+        }
+        /*테이블 태그를 스타일 줄 때는 자식 선택자를 지양합시다. 후손 (손자) 선택자를 씁시다.*/
+        table th{
+            color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text">
+        <input type="password">
+    </form>
+    <article>
+        <h1>hello HTML5!</h1>
+        <h2>hello CSS3!</h2>
+    </article>
+    <table border="1">
+        <tr>
+            <th>남은 공휴일</th>
+            <th>일자</th>
+        </tr>
+        <tr>
+            <td>3일</td>
+            <td>5/29, 6/6, 8/15</td>
+        </tr>
+    </table>
+</body>
+</html>

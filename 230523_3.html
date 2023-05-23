@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*반응 선택자*/
+        h1:hover{
+            color:cornflowerblue;
+        }
+        h1:active{
+            color:rgb(12, 168, 12)
+        }
+        input[type="text"]:enabled{
+            background-color: chartreuse;
+        }
+        input[type="text"]:disabled{
+            background-color: salmon;
+        }
+        input[type="text"]:focus{
+            background-color:tomato
+        }
+    </style>
+</head>
+<body>
+    <h1>반응이 일어나나요?</h1>
+    <hr>
+    <h2>사용가능</h2>
+    <input type="text">
+    <h2>사용 불가능</h2>
+    <input disabled="disabled">
+
+</body>
+</html>
