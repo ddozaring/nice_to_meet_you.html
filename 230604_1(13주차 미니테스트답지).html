@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flaot1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Roboto', sans-serif;
+        }
+        section{
+            width: 960px; margin: 0 auto;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+        article{
+            display: flex;
+        }
+        img{
+            padding: 25px;
+            width: 40%;
+        }
+        .img1{
+            float: right;
+        }
+        .img2{
+            float: left;
+        }
+        p{
+            display: inline-block;
+            padding: 25px;
+            width: 60%;
+            font-size: 18px;
+            line-height: 110%;
+        }
+        article::after {clear: both;}
+    </style>
+</head>
+<body>
+    <h1>What We Do?</h1>
+    <section>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo reiciendis, velit ea officiis quibusdam amet reprehenderit dignissimos quo expedita incidunt asperiores saepe aperiam delectus earum, accusantium, et iusto? Aspernatur obcaecati sed recusandae exercitationem modi illo architecto esse fugit eius! Ipsa iusto animi vel vitae sed, maiores eligendi optio numquam! Placeat?</p>
+            <img class="img1" src="https://images.unsplash.com/photo-1674574124567-79b2ee3d22fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80/" alt="으쌰으쌰 화이팅 이미지">
+        </article>
+        <article>
+            <img class="img2"  src="https://images.unsplash.com/photo-1674574124475-16dd78234342?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80" alt="토닥토닥 화이팅 이미지">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt voluptatem quasi cupiditate sapiente eos tempora id ipsam ratione modi adipisci. Necessitatibus repellat, suscipit rerum exercitationem ducimus earum blanditiis ea, ad quibusdam quam tenetur molestias non cumque. Veniam vel cum natus eum quo, soluta sint modi deserunt. Sequi ex debitis sapiente!</p>
+        </article>
+        <hr>
+    </section>
+
+</body>
+</html>
