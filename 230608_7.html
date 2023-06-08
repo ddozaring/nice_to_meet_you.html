@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes nemo {
+            from{
+                width: 30px;
+                height: 30px;
+            }
+
+            to{
+                width: 300px;
+                height: 300px;
+            }
+        }
+        0%{transform: scale(1);}
+        100%{transform: }
+    div{
+        margin: 30px auto;
+        width: 30px;
+        height: 30px;
+        background-color: blueviolet;
+        animation-name: nemo;
+        animation-duration: 2s;
+        animation-delay: 0.5s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-play-state: running;
+
+    }
+</style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:100px;
+            height: 100px;
+            background-color: rgb(0, 204, 255);
+            border: 5px solid black;
+            border-radius: 50%;
+            display: inline-block;
+            transition-property: all;
+            transition: 1s;
+            opacity: 0.3;
+        }
+        .box:hover{
+            transform: translate(0, 30px);
+            opacity: 1;
+        }
+        .move{
+            width:100px;
+            height: 100px;
+            background-color: rgb(0, 255, 179);
+            border: 5px solid black;
+            border-radius: 50%;
+            transition: all 1s;
+      
+        }
+        #line{
+            width: 300px;
+        }   
+        .move:hover{
+            transform: translate(300px, 0);
+        }
+
+        #box{
+            width:100px;
+            height: 100px;
+            background-color: rgb(0, 81, 255);
+            border: 5px solid black;
+            transition: all 5s;
+        }
+        #box:hover{
+            transform: rotate(3600deg);
+        }
+    </style>
+</head>
+<body>
+    <h2>마우스를 올려보세요.</h2>
+    
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+<div style="clear: both; ">
+
+<br><br>
+<div id="line">
+  <div class="move"></div> 
+</div>
+  
+<br><br>
+<div id="box"></div>
+</body>
+</html>

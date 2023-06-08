@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes slide {
+            0%{ transform: translateX(400px); }
+            100%{ transform: translateX(0); background-color: brown;}
+        }
+        p{
+            width: 100px;
+            height: 100px;
+            background-color: darksalmon;
+            animation-name: slide;
+            animation-duration: 2s;
+            animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            /*animation-name: 키프레임 이름 지정
+              animation-duration: 전체 구동 시간 n seconds(초) 1s, 2s,,,, .5 소수점 반영됨
+              animation-timing-function: 속도감의 종류;
+              animation-delay: 애니메이션 시작점 대기 시간;
+              animation-fill-mode: 끝날 때, 스타일 유지 
+              animation=interation-count: 무한반복
+              animation-direction: 구동방향 설정
+              animation-play-state: 재생상태 설정
+            */
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Animation....
+    </p>
+</body>
+</html>

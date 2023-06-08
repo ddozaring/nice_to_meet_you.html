@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        position: relative;
+    }
+
+    .border{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 5px solid rgb(217, 255, 0);
+        transition: transform 0.3s linear; 
+    }
+    div:hover .border{
+        transform: skew(-30deg);
+    }
+
+    </style>
+</head>
+<body>
+    <div id="a">
+        <span class="border"></span>
+      <img src="https://images.unsplash.com/photo-1682687221038-404cb8830901?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" width="200" height="200" alt="임시 이미지">
+      </div>
+      <div id="b">
+          <span class="border"></span>
+      <img src="https://images.unsplash.com/photo-1682687221038-404cb8830901?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60" width="200" height="200" alt="임시 이미지">
+      </div>
+</body>
+</html>
