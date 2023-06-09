@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        section div{
+            position: absolute;
+            width: 50%;
+            height: 50%;
+        }
+        section div:first-of-type{
+            background-color: black;
+            top: 0;
+            left: 0;
+
+        }
+        section div:nth-of-type(2){
+            background-color: blue;
+            top: 50%;
+            left: 0;
+        }
+        section div:nth-of-type(3){
+            background-color: cadetblue;
+            top: 0;
+            left: 50%;
+        }
+        section div:nth-of-type(4){
+            background-color: chartreuse;
+            top: 50%;
+            right: 0;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</body>
+</html>

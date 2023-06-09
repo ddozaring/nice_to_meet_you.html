@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bigmenu{
+            overflow: hidden;
+        }
+        .bitem{
+            float:left;
+            margin-right: 20px;
+            margin-bottom: 5px;
+        }
+        .submenu{
+            display: none;
+        }
+        .bigmenu:hover .submenu{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="bigmenu">
+        <div class="bitem">대메뉴1</div>
+        <div class="bitem">대메뉴2</div>
+        <div class="bitem">대메뉴3</div>
+        <ul class="submenu">
+            <li>소메뉴1</li>
+            <li>소메뉴2</li>
+            <li>소메뉴3</li>
+    </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top_menu{
+            text-align: center;
+        }
+        .top_menu ul{
+            margin: 0;
+            list-style-type: none;
+            border-radius: 10px;
+            padding: 0;
+        }
+        
+        .top_menu > ul > li{
+            
+        }
+        .top_menu ul li a{
+            text-decoration: none;
+        }
+        /*1차*/
+        .top_menu li{
+            background-color: aqua;
+            position: relative;
+        }
+        .top_menu li:hover{
+            background-color: blueviolet;
+        }
+        .top_menu li:hover a{
+            color: azure;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>float 예제</h1>
+
+<nav class="top_menu">
+  <ul>
+    <li>
+      <a href="#">1차메뉴아이템1</a>
+    <ul>
+        <li><a href="#">2차메뉴아이템1</a></li>
+        <li><a href="#">2차메뉴아이템2</a>
+          <ul>
+            <li><a href="#">3차메뉴아이템1</a></li>
+            <li><a href="#">3차메뉴아이템2</a></li>
+            <li><a href="#">3차메뉴아이템3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">2차메뉴아이템3</a></li>
+        <li><a href="#">2차메뉴아이템4</a></li>
+      </ul>
+    </li>
+    <li><a href="#">1차메뉴아이템2</a></li>
+    <li><a href="#">1차메뉴아이템3</a></li>
+    <li><a href="#">1차메뉴아이템4</a></li>
+  </ul>
+</nav>
+</body>
+</html>

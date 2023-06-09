@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	position: absolute;
+	top: 50%;
+	left: 3%;
+	transform: translate(-50%, -50%);
+}
+
+.move_animation {
+            animation-name: move_animation;
+            animation-duration: 5s;
+            animation-direction: alternate;/*왕복운동*/
+            animation-iteration-count: infinite;/*무한 반복*/
+            animation-timing-function: linear;
+            animation-play-state: running;
+
+}
+
+.move_animation:hover {
+    animation-play-state: paused;
+}
+@keyframes move_animation {
+    0%{ left: 10%; background-color: red; }
+            100%{ left: 90%; background-color: brown;}
+}
+    </style>
+</head>
+<body>
+    <div class="box move_animation"></div>
+</body>
+</html>
