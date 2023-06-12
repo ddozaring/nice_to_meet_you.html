@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: slateblue;
+            color: darkred;
+            font-weight: bold;
+            padding: 30px;
+            text-align: center;
+        }
+        div::before{
+            content: "미디어 쿼리(가로사이즈)가, 1024px이상일 때";
+
+        }
+        @media screen and (min-width: 1024px){
+            /*default*/
+        }
+        @media (min-width: 640px) and (max-width:1023px){
+            div{background-color: pink;
+            height: 300px; color: darkorange}
+        }
+        div::before{
+            content: "미디어 쿼리(가로사이즈)가, 640px 이상, 1023px 이하 일떄";
+        }
+        @media screen and (max-width: 639px){
+            div{background-color: rgb(248, 0, 41);
+            height: 300px; color: rgb(9, 116, 93)}
+
+            div::before{
+            content: "미디어 쿼리(가로사이즈)가, 640px 이하 일떄";
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rwd1</title>
+    <style>
+        #container{
+            width: 940px;
+            margin: 10px auto;
+            padding: 20px;
+            border: 1px solid brown;
+        }
+        header{
+            padding: 20px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+        section{
+            width: 550px;
+            padding: 20px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+            float: left;
+        }
+        aside{
+            width: 250px;
+            padding: 20px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+            float: right;
+        }
+        footer{
+            clear: both;
+            padding: 20px;
+            border: 1px solid violet;
+        }
+        @media screen and (max-width:680px){
+            #container{width: auto;
+            }
+            section{
+                width: auto;
+                float: none;
+            }
+            aside{
+                width: auto;
+                float: none;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>반응형 웹 구조 간단하게 짜보기</h1>
+        </header>
+        <section>
+            <h2>콘텐츠 제목</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ea praesentium placeat aspernatur esse voluptatibus quos. Nam placeat cumque tempora, aliquam magni omnis adipisci quisquam distinctio qui commodi ducimus maiores illum neque velit veniam iste et ipsum perspiciatis aperiam cupiditate nostrum molestiae voluptate repellat. A, fuga aliquid. Id quia temporibus aliquid in. Officiis deleniti veniam explicabo, fugiat iusto accusamus asperiores?</p>
+        </section>
+        <aside>
+            <h2>사이드 제목</h2>
+            <ul>
+                <li>lorem</li>
+                <li>ipsum</li>
+                <li>dolar</li>
+            </ul>
+        </aside>
+        <footer>
+            <p>copyright</p>
+        </footer>
+    </div>
+</body>
+</html>
