@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="">
+    <title></title>
+   <!--<link rel="stylesheet" href="230628_4.css">-->
+   <style>
+    article{
+    margin: 0 auto; /*가운데 정렬*/
+    padding: 30px 0;
+    width: 800px;
+    white-space: nowrap; /*줄바꿈 없이 죽- 이어지는 속성 값*/
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;/*스크롤 액션이 끝나면, 어딘가로 위치를 돌려놓을 수 있는 속성*/
+    /*scroll-snap-type: 스크롤 되는 박스에서, 스냅 포인트(위치 값)을 설정하는 css속성입니다.
+    none: 스냅포인트없이 기본 스크롤링 되는 상황
+    mandatory: 활성화, 가로축을 기점으로 start, end, center, 위치로 이동할 수 있도록 기준의 방향을 세웁니다.
+               세로축을 기점으로= y
+    scroll-snap-align: start, end, center;
+    */
+
+}
+
+.item{
+    scroll-snap-align: center;
+    display: inline-block;
+    white-space: normal;/*float과 clear의 관계처럼, 상위 white-space 속성을 해제하는 것 입니다.*/
+    background-color: aquamarine;
+    overflow: hidden;
+    width: 40%;
+}
+
+img{
+    display: block;
+    width: 100%;
+    height: 360px;
+}
+
+p{
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+   </style>
+</head>
+
+<body style="margin: 15px;">
+   <article>
+      
+      <div class="item">
+         <img src="https://tinyurl.com/mzmxn2nh" alt="" >
+         <p>Mon</p>
+      </div>
+
+      <div class="item">
+         <img src="https://tinyurl.com/yjhkrdtn" alt="" >
+         <p>Tue</p>
+      </div>
+
+      <div class="item">
+         <img src="https://tinyurl.com/4uz7x3u8" alt="" > 
+         <p>Wed</p>
+      </div>
+
+      <div class="item">
+         <img src="https://tinyurl.com/ykxce47k" alt="" >
+         <p>Thu</p>
+      </div>
+
+      <div class="item">
+         <img src="https://tinyurl.com/4xz5bbn4" alt="" >
+         <p>Fri</p>
+      </div>
+
+         <div class="item">
+            <img src="https://tinyurl.com/yc5yx6nf" alt="" width="400" height="300">
+            <p>Sat</p>
+         </div>
+
+         <div class="item" >
+            <img src="https://tinyurl.com/w857jf8s" alt="" width="400" height="300">
+            <p>Sun</p>
+         </div>
+</article>   
+</body>
+
+</html>
