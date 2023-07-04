@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> innnerHTML을 사용해봅니다.</h3>
+    <p id="a"></p>
+    <script>
+        //출력방식 중, innerHTML 써보기
+        document.getElementById('a').innerHTML="안녕하세요";/*id(a)라는 것을 html 단에서 안녕하세요로 치환*/
+        document.write('<p>안녕하세요</p>');
+
+        //입력방식 1가지 = prompt(즉각적인)
+        var name = prompt('이름을 입력해보세요');/*어럴트 형태로 나오며 '이름을 입력하세요는 설명란' */
+        document.write(name);
+
+        //변수의 종류 알아보기
+        var age = 20; //숫자형 데이터 1
+        var email = 'abc@gmail.com'; //문자열 데이터(sting) 2
+        var colors = ['빨강', '파랑', '노랑']; //배열데이터(array) 3
+        var ok = true; //부울,불(참, 거짓)데이터(boolean) 4
+        var member = {name:"홍길동", age:20, address:"인천"} //객체형 데이터 5
+
+        //1-1 숫자형 데이터에는...
+        var x= 3;    //정수
+        var y= 2.58;     //실수
+        var z = x + y;   //실수 or 정수
+        document.write(z)
+
+    </script>
+</body>
+</html>

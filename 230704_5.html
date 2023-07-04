@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비교연산자</title>
+</head>
+<body>
+    <script>
+        var a = 3; //숫자 num
+        var b = "3"; //문자 string
+        var c = 7; //숫자 num
+        var d = "7"; //문자 string
+
+        document.write((a==b) + "<br>"); //데이터형은 다릅니다만, 연산자 입장에서는 같은것으로 간주했기 때문에 "옳다"라고 나타내고 있습니다.
+        document.write((a===b) + "<br>"); //데이터형도 같아야 "옳다"라고 간주하기 때문에, 현재는 그르다고 나타내고 있습니다.
+        document.write((a!=b) + "<br>"); //데이터형은 다릅니다만, 연산자 입장에서는 같은 맥락으로 간주했기 때문에 그르다고 나타내고 있습니다.
+        document.write((a!==b) + "<br>"); //데이터형도 같아야 "옳다"라고 간주하기 때문에, 현재는 옳다고 나타내고 있습니다.
+        document.write((a > c) + "<br>"); // >크다 <작다 이기 때문에, 현재는 옳지 않습니다.
+        document.write((a < c) + "<br>"); // >크다 <작다 이기 때문에, 현재는 옳습니다.
+        document.write((a >= c) + "<br>"); // >=크거나같다 <=작거나같다 이기 때문에, 현재는 옳지 않습니다.
+        document.write((a <= c) + "<br>"); // >=크거나같다 <=작거나같다 이기 때문에, 이기 때문에, 현재는 옳습니다.
+    </script>
+</body>
+</html>

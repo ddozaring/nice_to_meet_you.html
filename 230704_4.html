@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = 10;
+        var y = 4;
+        var z = 10 + x/y;
+        document.write(z);// 덧셈, 나눗셈 (덧셈, 뺄셈보다 곱셈, 나눈셈이 더 먼저 사용된다.)
+        var a = 15;
+        var b = 4;
+        var c = a % b; //15를 4로 나눈 후 발생되는 자투리 값 = 3
+        document.write('<br>');
+        document.write(c);
+        var d = b % a;//4를 15로 나눈 후  '변칙'에 의해 0값 = 4
+        document.write(d);
+        var e = 3;
+        var f = e**2;//거듭제곱
+        document.write('<br>')
+        document.write(f);
+        document.write('<br>');
+        f++;//1증가
+        document.write(f);
+        e--;//1감소
+        document.write('<br>');
+        document.write(e);
+    </script>
+</body>
+</html>

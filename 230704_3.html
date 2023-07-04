@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     //1-1 숫자형 데이터에는...
+        var x= 3;    //정수
+        var y= 2.58;     //실수
+        var z = x + y;   //실수 or 정수
+        document.write(z);
+    
+    //2-1 문자열 데이터에는...
+        var a = "토끼"; //단어
+        var b = "거북이"; //문자열 데이터는 '', ""든 감싸줘야 나타납니다.
+
+        document.write('<br>');
+        document.write(a+"와"+b);
+        //var c = "나는 "홍길동" 입니다."; //문장, 이럴 경우 화면에 안보입니다. 
+        var d = "나는 '홍길동' 입니다"; //문장, 이럴 경우 올바릅니다. + 또는 역슬래시 
+        document.write(d);
+        
+
+    //3-1 불\(참, 거짓 - boolean) 데이터에는...
+        var tr = 7;
+        var ttr = 7;
+        var fa = 9;
+
+        document.write('<br>');
+        document.write(tr==ttr); // 연산자와 함께 사용합니다.
+        document.write(tr==fa); // = 할당 연산자 우측데이터 값이 좌측 변수 상자에 입력되는 것, ==비교연산자
+
+    //4-1 배열 데이터에는... 
+        document.write('<br>');
+        var cars = ['레이', '큐브', '캐스퍼','소나타', '산타페'] //대괄호로 묶고, 데이터 사이는 
+        document.write(cars[3]);  //몇번째를 세아릴 때, 0부터 셈을 칩니다. 
+        document.write('<br>');
+        document.write(cars);
+    
+    //5-1 객체 데이터에는 ...
+        document.write('<br>');
+        var scores = {kor: 80, eng:90, math:35}  //key(kor, engm math)와 value로 구성되어 있습니다.
+        total = scores.kor + scores.eng +scores.math;  //kor: 80이라는 하나의 덩어리 = property (속성) ->꺼내어 사용할 때는 (변수상자이름, 키)로 표기합니다.
+        avg = total/3;
+        document.write('합계:' + total);
+    </script>
+</body>
+</html>
