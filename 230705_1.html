@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //배열데이터
+        var flowers = ["장미","개나리","목련","수국", "프리지아"]
+        document.write(flowers[3]); //어떤 숫자를 써야 수국이 나올까요?
+
+        //산술연산자
+        var x = 1;
+        var y = 2;
+        var z = 10 + x*y; //곱셈과 나눗셈의 관계에서, 우선순위를 부여하고자 한다면, ()로 우선 계산될 부분을 표시해줍시다.
+        document.write("<br>")
+        document.write(z);
+
+        //할당연산자
+        var a = 3;
+        var b = 3;
+        var c = 5;
+        a +=2; // 원래 a변수상자가 가지고 있는 3데이터에, 2를 더한 값으로 업데이트됨.
+        b %=2; // 원래 b변수상자가 가지고 있는 4데이터에, 2로 나누고 남은 값으로 업데이트됨/
+        c *=5;
+        var d = a + b + c;
+        document.write("<br>")
+        document.write(d);
+
+        /* 
+        = (x = 2) 2라는 숫자 데이터를 변수상자  x 에 저장
+        += (x += 2) 현재 x변수상자 값에 2를 더한 값을 (4) 다시 x변수상자에 저장
+        -= (x -= 2) 현재 x변수상자 값에 2를 뺀값을 (0) 다시 x변수상자에 저장
+        *= (x *= 2) 현재 x변수상자 값에 2를 곱한값을 (4) 다시 x 변수상자에 저장
+        /= (x /= 2) 현재 x변수상자 값에 2로 나눈값을 (1) 다시 x 변수상자에 저장
+        %= (x %= 2) 현재 x변수상자 값에 2로 나눈 나머지값을 (0) 다시 x 변수상자에 저장
+        */
+
+        var ss = 10; //ss변수상자에 10숫자데이터를 넣음.
+        ss += 2; // 일반산수 개념에서 ss+2와 동일.
+        document.write("<br>")
+        document.write(ss); 
+
+        ss -= 4; // 일반산수 개념에서 ss-4와 동일
+        document.write("<br>");
+        document.write(ss);
+
+        ss /= 2; // 일반산수 개념에서 ss/2와 동일.
+        document.write("<br>")
+        document.write(ss); 
+      
+        ss %= 3; // 일반산수 개념에서, 나누고 난뒤 나머지 값과 동일
+        document.write("<br>")
+        document.write(ss); 
+
+        ss %= 3;
+    </script>
+</body>
+</html>

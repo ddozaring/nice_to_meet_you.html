@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>조건문 중 if와 else 써보기</h1>
+    <input id="themeChange" type="button" value="다크모드" onclick="
+    
+    
+        //모드가 어떤 상태인지 참 거짓을 판별하는 중....
+        if(document.querySelector('#themeChange').value === '다크모드'){
+
+        //다크모드가 참일 경우, 배경색과, 글자색 바꾸기...   
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+        
+
+        //모드 상태를 할당연산자로, '일반모드'라는 문자열로 업데이트함    
+        document.querySelector('#themeChange').value = '일반모드';
+        }
+        else{
+                document.querySelector('body').style.backgroundColor ='white';
+                document.querySelector('body').style.color = 'black';
+
+        //모드 상태를 할당연산자, '다크모드'라는 문자열로 업데이트 함께
+        document.querySelector('#themeChange').value === '다크모드';
+        }
+        ">
+
+        
+    <ol>
+        <li>html</li>
+        <li>css</li>
+        <li>js</li>
+    </ol>
+    <h2>js 연습용입니다.</h2>
+</body>
+</html>

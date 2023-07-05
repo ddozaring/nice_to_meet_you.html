@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var score = prompt("점수를 입력하세요.");
+    if (score<0 || score>100) {
+        document.write("점수가 잘못 입력되었습니다!");
+    }
+    if (score>=95) {
+        grade = "A+";
+        document.write("점수 : " + score + ", 등급 : " + grade);
+    }
+    if (score>=90) {
+        grade = "A";
+        document.write("점수 : " + score + ", 등급 : " + grade);
+    }
+    if (score>=85) {
+        grade = "B+";
+        document.write("점수 : " + score + ", 등급 : " + grade);
+    }
+    if (score>=80) {
+        grade = "B";
+        document.write("점수 : " + score + ", 등급 : " + grade);
+    }
+    if (score>=75) {
+        grade = "C+";
+        document.write("점수 : " + score + ", 등급 : " + grade);
+    }
+    if (score>=70) {
+        grade = "C";
+        document.write("점수 : " + score + ", 등급 : " + grade);
+    }
+    if (score>=65) {
+        grade = "D+";
+        document.write("점수 : " + score + ", 등급 : " + grade);
+    }
+    if (score>=60) {
+        grade = "D";
+        document.write("점수 : " + score + ", 등급 : " + grade);
+    }
+    else {
+        grade = "F";
+        document.write("점수 : " + score + ", 등급 : " + grade);
+    }   
+</script>
+</body>
+</html>

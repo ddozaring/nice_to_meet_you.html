@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리연산자</title>
+</head>
+<body>
+    <script>
+        /*
+        && AND (그리고- 두조건이 모두 만족시켰을 경우에 '참'결과값이 나옵니다. )
+        || OR (또는- 두 조건중 한가지의 조건만 만족시키더라도 '참' 결과값이 나옵니다.)
+        ! NOT (아니오- 예상도출결과가 '참'일 경우에는 '거짓' 결과값이 나옵니다.
+                    - 예상도출결과가 '거짓'일 경우에는 '참' 결과값이 나옵니다.)
+        */
+        var x = 10;
+        var y = 60;
+
+        // 비교연산자 > 크다 < 작다 >= 크거나 같다 <= 작거나 같다.
+
+        document.write ((x>30 && y>50)+ "<br>");
+        document.write ((x>30 || y>50)+ "<br>");
+        document.write (!(x==y)+"<br>");
+    </script>
+</body>
+</html>
