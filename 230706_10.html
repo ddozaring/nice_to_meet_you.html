@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var day = prompt("요일을 숫자로 입력해보시겠어요(1은 일요일을 의미):");
+        var day_name;
+            switch(parseInt(day)){
+                case 1:
+                    day_name = "일요일";
+                break; //브레이크가 각 케이스 구문을 종료해주지 않는다면, 
+                       //fall-through상태가 됩니다.
+                case 2:
+                    day_name = "월요일";
+                break;
+                case 3:
+                    day_name = "화요일";
+                break;
+                case 4:
+                    day_name = "수요일";
+                break;
+                case 5:
+                    day_name = "목요일";
+                break;
+                case 6:
+                    day_name = "금요일";
+                break;
+                case 7:
+                    day_name = "토요일";
+                break;
+                default:day_name = "다시 알려주세요";
+            }
+            document.write(day_name + "입니다.");
+    </script>
+</body>
+</html>

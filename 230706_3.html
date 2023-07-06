@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //if~ else if~ else... 반복하는 구문을 작성해보겠습니다.
+        //이런 구문 : 조건이 여러가지여서, 각각의 조건값을 모두 만들어줘야 할 때 사용됩니다.
+        /*if (조건식) {
+            문장1....
+        }*/
+        var score = prompt("애플리케이션 설계 과목의 점수를 입력해주세요");
+        if (score < 0 || score > 100 ){
+            document.write("이 점수...맞나요? 다시 입력바랍니다.");
+        }
+        else if(score >= 95) {
+            grade ="A+";
+            document.write("당신의 점수는:" + score +"점으로," + grade  + "등급입니다, 축하합니다.");
+        }
+        else if(score >= 85) {
+            grade ="A";
+            document.write("당신의 점수는:" + score +"점으로," + grade  + "등급입니다, 축하합니다.");
+        }
+        else if(score >= 75) {
+            grade ="B+";
+            document.write("당신의 점수는:" + score +"점으로," + grade  + "등급입니다, 축하합니다.");
+        }
+        else if(score >= 65) {
+            grade ="B";
+            document.write("당신의 점수는:" + score +"점으로," + grade  + "등급입니다, 축하합니다.");
+        }
+        else if(score >= 55) {
+            grade ="C+";
+            document.write("당신의 점수는:" + score +"점으로," + grade  + "등급입니다, 축하합니다.");
+        }
+        else if(score >= 45) {
+            grade ="C+";
+            document.write("당신의 점수는:" + score +"점으로," + grade  + "등급입니다, 축하합니다.");
+        }
+        else {
+            grade ="F";
+            document.write("당신의 점수는:" + score +"점으로," + grade  + "등급입니다, 아쉽네요")
+        }
+    </script>
+</body>
+</html>

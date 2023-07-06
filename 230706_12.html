@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // 구매금액  var buy;
+// 할인되는 금액 var discount;
+// 할인율 var dis;
+// 지불금액 pay;
+
+var buy;
+var discount;
+var dis;
+var pay;
+buy = prompt("~~~~~입력~~~~");
+
+if (buy >= 10000 && buy < 50000) {
+	dis = 5;
+} 
+else if (buy >= 50000 && buy <300000) {
+    dis = 7.5;
+} 
+else if (buy >= 300000){
+    dis = 10;
+ }
+else {
+    dis =0;
+}
+//할인되는 금액
+discount = buy * (dis/100);
+//지불금액 = 구매금액 - 할인되는 금액
+pay = buy - discount;
+
+document.write("-구매금액 : " + buy + "원" + "<br>");
+document.write("-할인율 : " + dis + "%" + "<br>");
+document.write("-할인금액 : " + discount + "원" + "<br>");
+document.write("-지불금액 : " + pay + "원 입니다.");
+</script>
+</body>
+</html>

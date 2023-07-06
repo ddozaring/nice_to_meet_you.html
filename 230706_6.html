@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //사이트에 회원인 분들 중에서, 레벨이 어느 정도 이상 되는 분들의 콘텐츠 이용이 가능하도록 만들어 봅시다.
+        //콘텐츠 이용이 가능하도록 만들어봅시다.
+        //if문의 중첩 : if문과 else문, 그리고 else if문을 종합하여 사용합니다.
+        var username = prompt("닉네임을 입력해보세요")
+        if (username == "admin"){
+            document.write("당신은 관리자이므로, 콘텐츠 모든 이용이 가능합니다.");
+        }
+
+        else {
+            level = Number(prompt("회원레벨을 입력해보세요"));
+            if(level >=1 && level <=5){
+                document.write("당신은 정회원이므로, 회원콘텐츠 이용이 가능합니다.");
+            }
+            else{
+                document.write("당신은 미가입자거나, 준회원으로, 이용을 위해서는 레벨 업을 해야합니다.");
+            }
+        }
+        
+
+
+    </script>
+</body>
+</html>
