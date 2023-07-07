@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #result::after{
+        content:"";
+    }
+    </style>
+</head>
+<body>
+    <div id="result"></div>
+    <script>
+        var contents = ""; 
+        var n = 1;
+        while (n<=6){
+            if(n%2 == 1)// 나머지값이 홀수1로 떨어진다면..
+            { contents += "<img src='./img/imfree.png' >";
+            }
+            
+            else{
+                contents += "<img src='./img/imfree.png' >";
+            }
+            n++;
+        }
+        document.getElementById("result").innerHTML = contents;
+    </script>
+</body>
+</html>

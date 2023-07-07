@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = 1;
+        var sum = 0; //빈공간 세팅 num이 올자리
+        while (num<= 100) {
+            if (num %3 == 0) { //3의 배수를 뽑아내는 조건식
+                sum += num;       // sum = sum + num
+            }            
+            num++;
+        }
+        document.write("1~100의 3의 배수의 합계 : " + sum);
+    </script>
+</body>
+</html>
