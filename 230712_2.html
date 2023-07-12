@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x;
+        var y;
+
+        x = new Date();
+        y = x.getHours();
+        
+        if(y < 5){
+            alert('잠을 자라....');
+        }
+        else {
+            if (y < 7){
+                alert('준비');
+            }
+            else{
+                if(y < 9.5){
+                    alert('출근');
+                }
+                else{
+                    if(y <12.2){
+                        alert("스터디하드");
+                    }
+                    else{
+                        if(y < 13.5){
+                            alert("냠냠");
+                        }
+                        else{
+                            if(y < 18.2){
+                                alert("스터디하드");
+                            }
+                            else{
+                                alert("퇴근");
+                            }
+                        }
+                    }
+                }
+            }
+            //alert("깨어있자..");
+        }
+    </script>
+</body>
+</html>

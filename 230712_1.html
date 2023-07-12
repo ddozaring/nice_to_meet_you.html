@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        //백슬래시 (\)를 출력하기 위해 이스케이프(/) 사용
+        document.write("첫번째 줄\n두번째 줄\n세번째 줄 ");
+        //"<br>" \ << 백스페잇 열에 w표시를 누르면 됩니다.
+        var a;
+        let a =1;
+        const a;
+        
+        a= 3.14;
+        document.write(a);
+
+        a= 5;
+        */
+        
+        /*
+        var i=150;
+        var i=prompt();
+        if( i >52){
+            alert("i가 52보다 큽니다");
+        }
+        else{
+            alert("i가 52보다 작습니다");
+        }*/
+        
+        var date;
+        var hours;
+
+        date = new Date();
+        hours = date.getHours();//1-24까지 변수를 담고있는 매서드
+
+        if(hours < 12){
+            alert("오전");
+        }
+        else{
+            alert("오후");
+        }
+
+
+    </script>
+</body>
+</html>
