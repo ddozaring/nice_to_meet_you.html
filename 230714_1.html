@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5의 배수 구하기</title>
+</head>
+<body>
+    <script>
+        function is_besu5(n){
+            var str;
+
+            if(n%5 == 0){
+
+            
+            str = n + "는(은) 5의 배수가 맞다.";
+            }
+            else{
+                str = n + "는(은)5의 배수가 아니다.";
+            }
+            return str;
+        }
+
+        var num = 23; // 미지수 즉 매개변수에 들어가는 정수데이터
+        var messege;  //messege is_besu5함수 도출을 위한 변수
+
+        messege = is_besu5(num);
+        document.write(messege);
+    </script>
+</body>
+</html>

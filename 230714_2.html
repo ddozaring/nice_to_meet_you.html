@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 직접 지정한 함수박스 내에서 사용되는 변수(서브루틴) : local variable (지역변수)
+        // 지정된 함수를 벗어난 부분에서 화면 도출에 사용되는 변수(메인루틴) : Global variable (전역변수)
+        // GNB :Global Navigation Bar (메인 메뉴바)
+        // LNB :Local Navigation Bar (서브 메뉴바)
+        
+        function func(){
+
+            document.write(x + "는 정수형 데이터입니다.");
+        }
+        var x = 10; //지역변수였던 x를 func함수 밖으로 꺼내왔으므로, 이제는 전역변수입니다.
+
+        func(); //func 함수 도출
+        document.write( '<br>'+ x + "은 양수입니다.");
+
+    </script>
+
+    
+</body>
+</html>
