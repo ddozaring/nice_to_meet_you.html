@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로케이션</title>
+</head>
+<style>
+    button { background-color: yellow; padding: 10px; text-align: center; }
+</style>
+<body>
+    <fieldset>
+        <legend>문제1</legend>
+    <script>
+        
+        const member ={
+            아이디 : "jia_jo",
+            이름 :  "조지아" ,
+            이메일 : "jia_jo@newssync.com"
+        };
+        document.write( '아이디 : '+ member.아이디 + '<br>')
+        document.write( '이름 : ' + member.이름 + '<br>')
+        document.write( '이메일 : ' + member.이메일 + '<br>')
+
+    </script>
+    </fieldset>
+
+    <fieldset>
+        <legend>문제2</legend>
+        <script>
+
+function Employee(name, age, position, salary) {
+        this.name = name;
+        this.position = position;
+        this.age = age;
+        this.salary = salary;
+    }
+
+    var person1 = new Employee("안진수", 52, "부장", 5000000);
+    var person2 = new Employee("홍지영", 28, "사원", 3000000);
+
+    var list = "";      
+    list += "1. " + "안진수" + " : ";
+    list += "부장" + ", ";
+    list += "52" + ", ";
+    list += 5000000;
+    list += "<br>";
+
+    list += "2. " + "홍지영" + " : ";
+    list += "사원" + ", ";
+    list +=  "28"+ ", ";
+    list += "3000000";
+
+    document.write(list);
+        </script>
+    </fieldset>
+    <fieldset>
+        <legend>문제3</legend>
+    <button onclick="changeTextColor(this)">글자 색상 변경하기</button>
+<button onclick="backgroundColor(this)">배경 색상 변경하기</button>
+    <script>
+    function changeTextColor(obj) {
+        obj.style.color = "red";
+    }
+
+    function backgroundColor(obj) {
+        obj.style.backgroundColor = "pink";
+    }
+    </script>
+    </fieldset>
+</body>  
+</html>
